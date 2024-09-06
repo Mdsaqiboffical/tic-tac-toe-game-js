@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #27033D;
+
+}
+
+.container {
+    margin-top: 2rem;
+    text-align: center;
+    align-content: center;
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 80%;
+    /* display: flex; */
+
+}
+
+.tic-tac-toe {
+    height: 50vmin;
+    width: 50vmin;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    /* border: 2px solid green; */
+}
+
+.heading-sec {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace, serif, sans-serif;
+}
+
+.heading-sec .span-1 {
+    color: #BC9D3F;
+
+}
+
+.heading-sec .span-2 {
+    color: #72CFF9;
+}
+
+.heading-sec .span-3 {
+    color: #BC9D3F;
+}
+
+.box {
+    text-align: center;
+    height: 15vmin;
+    width: 15vmin;
+    font-size: 2.5rem;
+    border: none;
+    border-radius: .5rem;
+    color: crimson;
+    font-weight: 700;
+    /* background-color: #161616; */
+    background-color: #3D1558;
+    align-content: center;
+    margin: auto;
+
+    &:hover {
+        background-color: #40155cbd;
+        transition: 200ms;
+    }
+}
+
+.clear-all,
+.new-game {
+    margin-top: 1rem;
+    width: 20%;
+    height: 40px;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #9579b8;
+
+    &:hover {
+        color: #f4f4f4;
+        background-color: #39a145;
+        transition: 500ms ease-out;
+    }
+}
+
+#msg {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.68rem;
+    font-weight: bold;
+    color: #d30000;
+}
+
+.fa-solid {
+    color: #BC9D3F;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.fa-x {
+    color: #72CFF9;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.hide {
+    display: none;
+}
+
+.highlight {
+    background-color: #cccccc8b;
+    transition: background-color 0.5s;
+}
