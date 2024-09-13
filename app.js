@@ -115,11 +115,12 @@ const enablebtn = () => {
     };
 };
 
+// New Game Function
 newGame.addEventListener("click", enablebtn);
 
-newGame.classList.add("hide");
+newGame.classList.add("hide"); 
 
-
+// Reset Function
 clearAll.addEventListener("click", () => {
     for (let clear of allBtn) {
         clear.innerHTML = "";
